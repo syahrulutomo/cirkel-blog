@@ -1,0 +1,1 @@
+export { LeftCarousel } from './LeftCarousel'
