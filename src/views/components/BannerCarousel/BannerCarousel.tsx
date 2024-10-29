@@ -1,7 +1,8 @@
 "use client";
 
+
 import Image from "next/image";
-import Placeholder from '@/views/assets/Placeholder-Image.png'
+import { useRouter } from "next/navigation";
 import { Article } from "@/app/api/home/types";
 import dayjs from "dayjs";
 
@@ -10,8 +11,9 @@ interface BannerCarouselProps {
 }
 
 export const BannerCarousel = ({ data }: BannerCarouselProps) => {
+  const router = useRouter()
   return (
-    <div className="hidden relative md:flex items-center w-full lg:w-fit mx-auto">
+    <div className="hidden relative md:flex items-center w-full lg:w-fit mx-auto" onClick={() => router.push(`/article/${data?.id}`)}>
       <div className="rounded-[10px] w-[360px] relative">
         <Image src={data.thumbnail} width={360} height={280} alt="" className="rounded-[10px]" />
       </div>
