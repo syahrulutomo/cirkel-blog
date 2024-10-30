@@ -9,7 +9,7 @@ export const ARTICLES_LIBRARY = [
       "Sesi jamming adalah momen yang dinantikan oleh para musisi. Di sinilah ide-ide baru bermunculan, kekompakan semakin terasah, dan tentunya, kemampuan bermain musik semakin meningkat. Tapi, pernahkah kamu merasa sesi jamming jadi kurang efektif? Atau bahkan, malah jadi ajang adu ego? Agar sesi jamming bisa maksimal, yuk simak tips dan trik berikut ini!",
     created_at: "Tue Oct 29 2024 15:00:24 GMT+0700",
     updated_at: "",
-    author: "Admin Blog Cirkel",
+    author: "Admin",
     content: `<p>Sesi jamming adalah momen yang dinantikan oleh para musisi. Di sinilah ide-ide baru bermunculan, kekompakan semakin terasah, dan tentunya, kemampuan bermain musik semakin meningkat. Tapi, pernahkah kamu merasa sesi jamming jadi kurang efektif? Atau bahkan, malah jadi ajang adu ego? Agar sesi jamming bisa maksimal, yuk simak tips dan trik berikut ini!</p>
 <h3 id="-persiapan-sebelum-jamming-"><strong>Persiapan Sebelum Jamming</strong></h3>
 <ul>
@@ -50,7 +50,7 @@ export const ARTICLES_LIBRARY = [
       "Bagi para musisi, khususnya mereka yang tergabung dalam sebuah band, menemukan studio musik yang sesuai adalah hal yang krusial. Studio yang tepat tidak hanya menyediakan fasilitas yang memadai untuk berlatih, tetapi juga dapat meningkatkan kualitas musik yang dihasilkan.",
     created_at: "Tue Oct 29 2024 15:00:24 GMT+0700",
     updated_at: "",
-    author: "Admin Blog Cirkel",
+    author: "Admin",
     content: `<p>Bagi para musisi, khususnya mereka yang tergabung dalam sebuah band, menemukan studio musik yang sesuai adalah hal yang krusial. Studio yang tepat tidak hanya menyediakan fasilitas yang memadai untuk berlatih, tetapi juga dapat meningkatkan kualitas musik yang dihasilkan.</p><br/>
 <p><strong>Hal-Hal Penting yang Perlu Diperhatikan Saat Memilih Studio Musik</strong></p>
 <p>Ketika mencari studio musik, ada beberapa faktor penting yang perlu Anda pertimbangkan:</p>
