@@ -3,7 +3,6 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 import { Card } from "../Card";
-import PlaceholderImageCropped from "@/views/assets/Placeholder-Image-Cropped.png";
 import { ArrowLeft2, ArrowRight2 } from "iconsax-react";
 import { twMerge } from "tailwind-merge";
 import { useInView } from "react-intersection-observer";
@@ -69,7 +68,7 @@ export const LeftCarousel = ({ title, subtitle, data }: LeftCarouselProps) => {
               image={item.thumbnail}
               title={item.title}
               label={item.label}
-              time={dayjs(item.created_at).diff(new Date(), 'days') === 0 ? "Today" : dayjs(item.created_at).diff(new Date(), 'days') + 'days ago'}
+              time={dayjs(new Date()).diff(item.created_at, 'days') === 0 ? "Today" : dayjs(new Date()).diff(item.created_at, 'days') + ' days ago'}
               author={item.author}
               onClick={() => router.push(`/article/${item.id}`)}
             />

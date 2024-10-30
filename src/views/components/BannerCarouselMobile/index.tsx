@@ -21,7 +21,7 @@ const BannerCarouselMobile = (props: BannerCarouselMobileProps) => {
           {props.data?.short_description}
         </p>
         <p className="flex gap-4 mt-4 opacity-50 font-light">
-          <span>{dayjs(props.data?.created_at).diff(new Date(), 'days') === 0 ? "Today" : dayjs(props.data?.created_at).diff(new Date(), 'days') + 'days ago'}</span>
+          <span>{dayjs(new Date()).diff(props.data?.created_at, 'days') === 0 ? "Today" : dayjs(new Date()).diff(props.data?.created_at, 'days') + 'days ago'}</span>
           <span>By {props.data?.author}</span>
         </p>
       </div>

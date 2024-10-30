@@ -24,7 +24,7 @@ export const BannerCarousel = ({ data }: BannerCarouselProps) => {
           {data.short_description}
         </p>
         <p className="flex gap-4 mt-4 opacity-50 font-light absolute bottom-[40px]">
-          <span>{dayjs(data?.created_at).diff(new Date(), 'days') === 0 ? "Today" : dayjs(data?.created_at).diff(new Date(), 'days') + 'days ago'}</span>
+          <span>{dayjs(new Date()).diff(data?.created_at, 'days') === 0 ? "Today" : dayjs(new Date()).diff(data?.created_at, 'days') + ' days ago'}</span>
           <span>By {data?.author}</span>
         </p>
       </div>

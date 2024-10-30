@@ -33,7 +33,7 @@ const Article = () => {
         <p className="text-secondary-darker font-medium text-3xl mb-2 md:mb-4">{article.title}</p>
 
         <div className="text-secondary-dark text-sm flex gap-4">
-          <span>{dayjs(article.created_at).diff(new Date(), 'days') === 0 ? "Today" : dayjs(article.created_at).diff(new Date(), 'days') + 'days ago'}</span>
+          <span>{dayjs(new Date()).diff(article.created_at, 'days') === 0 ? "Today" : dayjs(new Date()).diff(article.created_at, 'days') + 'days ago'}</span>
           <span>By {article.author}</span>
         </div>
 
